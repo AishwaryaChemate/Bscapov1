@@ -1,0 +1,91 @@
+{
+    "issuer": {
+        "address": {
+            "branchID": "0",
+            "country": "EG",
+            "governate": "Al Sokhna-Suez",
+            "regionCity": "Ain Al Sokhna",
+            "street": "Factory: Plot No:113, 1stÂ Industrial Sector for Orascom Industrial Park,North-West Gulf of Suez Suez Canal Economic Zone at Ain Al Sokhna-Suez, Egypt",
+            "buildingNumber": "0",
+            "postalCode": "8130101",
+            "floor": "0",
+            "room": "0",
+            "landmark": "Ain Al Sokhna-Suez, Egypt"
+        },
+        "type": "B",
+        "id": "752217534",
+        "name": "ABDOS FMCG Manufacturing"
+    },
+    "receiver": {
+        "address": {
+            "country": "EG",
+            "governate": "Netherlands",
+            "regionCity": "Santa FÃ©",
+            "street": "Weena 455 3013 AL Rotterdam, ",
+            "buildingNumber": "0",
+            "postalCode": "1234",
+            "floor": "0",
+            "room": "0"
+        },
+        "type": "B",
+        "id": "212725955",
+        "name": "Unilever Europe BV"
+    },
+    "documentType": "i",
+    "documentTypeVersion": "1.0",
+    "dateTimeIssued": "2025-01-27T03:48:16Z",
+    "taxpayerActivityCode": "2023",
+    "internalID": "2331000007",
+    "purchaseOrderReference": "test9",
+    "purchaseOrderDescription": "",
+    "salesOrderReference": "1306500008",
+    "salesOrderDescription": "",
+    "proformaInvoiceNumber": "",
+    "payment": {
+        "bankName": "",
+        "bankAddress": "",
+        "bankAccountNo": "",
+        "bankAccountIBAN": "",
+        "swiftCode": "",
+        "terms": ""
+    },
+    "delivery": {
+        "approach": "",
+        "packaging": "",
+        "dateValidity": "2024-12-31T00:00:00Z",
+        "exportPort": "",
+        "grossWeight": 7.000,
+        "netWeight": 9.160,
+        "terms": "DDP,DDP"
+    },
+    "invoiceLines": [
+        {
+            "description": "BERTOLLI OLIVE OIL 100ML test",
+            "itemType": "EGS",
+            "itemCode": "EG-752217534-4000000032",
+            "unitType": "CS",
+            "quantity": 1.000,
+            "internalCode": "",
+            "salesTotal": 5000.00,
+            "total": 4600.00,
+            "valueDifference": 0,
+            "totalTaxableFees": 0.00,
+            "netTotal": 4600.00,
+            "itemsDiscount": 0,
+            "unitValue": {
+                "currencySold": "EGP",
+                "amountEGP": 5000.00
+            },
+            "discount": {
+                "rate": 10.00,
+                "amount": 400.0
+            }
+        }
+    ],
+    "totalDiscountAmount": 400.0,
+    "totalSalesAmount": 5000.00,
+    "netAmount": 4600.00,
+    "totalAmount": 4600.00,
+    "extraDiscountAmount": 0,
+    "totalItemsDiscountAmount": 0
+}
