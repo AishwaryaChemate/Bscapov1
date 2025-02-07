@@ -1,0 +1,233 @@
+/* For WebKit browsers (e.g., Chrome, Safari) */
+/* Track */
+.scrollable::-webkit-scrollbar-track {
+  background: rgba(0, 156, 255, 0.1); /* Yellow scrollbar track color */
+}
+
+/* Handle */
+.scrollable::-webkit-scrollbar-thumb {
+  background: rgba(0, 156, 255, 0.3); /* Yellow scrollbar thumb color */
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+.scrollable::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 156, 255, 0.1); /* Lighter shade of yellow on hover */
+}
+
+/* Track where scroll is not present */
+.scrollable::-webkit-scrollbar-track-piece {
+  background-color: rgba(0, 156, 255, 0.1); /* Yellow scrollbar track color */
+}
+
+/* For Firefox */
+.scrollable {
+  scrollbar-color: rgba(0, 156, 255, 0.1) #f1f1f1; /* Yellow scrollbar thumb color and default track color */
+  scrollbar-width: thin;
+}
+
+/* For Edge */
+.scrollable {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 156, 255, 0.1) #f1f1f1; /* Yellow scrollbar thumb color and default track color */
+}
+
+/* For all browsers */
+.scrollable {
+  max-height: calc(100vh - 300px); /* Adjust as needed */
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+  padding: 25px;
+  background-color: #F4F4F5;
+
+  color: #18181B;
+  max-height: 100% !important;
+  width: 270px; /* Adjust width as needed */
+  transition: all 0.5s;
+  overflow-y: hidden;
+  position: relative;
+  font-family: 'Inter';
+  /*border-radius: 0px 35px 35px 0px;  Rounded corners */
+}
+.sidebar.collapsed {
+  width: 80px; /* Reduced width when collapsed */
+  padding: 0.75rem;
+}
+
+/* Top section of the sidebar */
+.top_section {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/*Bar logo styling*/
+.bars{
+  margin-left: 10px;
+}
+
+/* Logo styling */
+.logo {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: black; /* Dark gray text color */
+  align-self: center;
+}
+
+.img-fluid{
+  align-self: center;
+
+}
+
+/* Sidebar links */
+.link {
+  margin: 10px auto;
+  padding: auto;
+  display: flex;
+  color: black;
+  padding: 10px 5px;
+  gap: 15px;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 5px;
+}
+
+/* Active link styling */
+.active {
+  margin: 10px 02px;/*due to margin whole shadow is seen*/
+  padding: 0.55rem ; 
+  background: rgb(255, 255, 255); /* Darker orange gradient */
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px -1px rgba(0, 0, 0, .1);
+  border-radius: .85rem;
+}
+
+/*icon styling*/
+.icon {
+  background-color: #ffffff; 
+  color: #18181B; 
+  padding: 4px 8px;
+  border-radius: .50rem; 
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+
+}
+.link.active .icon {
+  background-color: #F97316; /* Change to your desired color */
+  color: #ffffff;
+}
+
+/*link text styling */
+.link_text {
+  align-self: center;
+  font-size: 0.90rem;
+  letter-spacing: 0.025rem;
+  color: #18181B;
+}
+.link.active .link_text{
+  font-weight: 600; /* Set a base font weight */
+  font-stretch: 89%; /* Adjust the width of the characters to make it appear less bold */
+}
+
+/* Bottom section of the sidebar */
+.bottom_section {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 15px;
+  background-color: #F4F4F5;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 10px 10px; /* Rounded bottom corners */
+}
+
+/* Media queries for responsive design */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .logo {
+    font-size: 1.5rem;
+    margin-left: 20px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .logo {
+    font-size: 2rem;
+    margin-left: 20px;
+  }
+}
+
+/* Slide-in Animation */
+@keyframes slideIn {
+  from {
+    transform: translateX(-250px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.sidebar {
+  animation: slideIn 0.3s forwards; /* Play the animation */
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.link {
+  animation: fadeIn 0.3s forwards; /* Play the animation */
+}
+
+/* Expand/Collapse Animation */
+@keyframes expandSidebar {
+  from {
+    width: 80px;
+  }
+  to {
+    width: 250px;
+  }
+}
+
+.sidebar.active {
+  animation: expandSidebar 0.3s forwards; /* Play the animation */
+}
+
+/* Icon Scale Animation */
+@keyframes scaleIcon {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+
+/* Menu Item Expand Animation */
+@keyframes slideInSubmenu {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.link:hover .submenu {
+  display: block;
+  animation: slideInSubmenu 0.3s forwards; /* Play the animation */
+}

@@ -1,0 +1,77 @@
+/* Main container */
+.main_container {
+  display: flex;
+  padding: 0 !important;
+  height: 100vh;
+}
+
+/* Main content area */
+main {
+  flex: 1; /* Take up remaining space */
+
+  background-color: #F4F4F5;
+  font-family: 'Inter', sans-serif;
+  font-size: .95rem;
+  font-weight: 500;
+  width: 100%;
+  height: 100% !important;
+
+  overflow-x: hidden;
+}
+
+/* Navbar styling */
+.navbar {
+  background-color: #F4F4F5 !important; /* Ensures the color sticks */
+  border-bottom: 1px solid #e0e0e0;     /* Light bottom border for separation */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  z-index: 10; /* Makes sure it stays above content when scrolling */
+}
+
+/* Dropdown menu styling */
+.dropdown-menu {
+  background-color: #ffffff !important; /* White background for dropdowns */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a soft shadow */
+  border-radius: .5rem;                   /* Smooth rounded corners */
+}
+
+/* Dropdown items */
+.dropdown-item {
+  color: #7c7b7b;
+  padding: 10px 15px;
+  transition: background-color 0.3s ease;
+}
+.dropdown-item:hover {
+  background-color: #F4F4F5 !important; 
+  color: #F97316 !important;
+}
+.dropdown-item.active {
+  background-color: #F97316 !important; 
+  color: #F97316 !important;            
+  font-weight: bold;
+  border-radius: 0.4rem;               
+}
+
+
+/* Navbar link styles */
+.nav-link {
+  color: #333333 !important;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #F97316 !important; /* Subtle blue on hover */
+}
+
+/* Search bar style */
+.form-control:focus {
+  outline: none !important;       /* Removes the blue outline */
+  box-shadow: none !important;    /* Removes the blue glow */
+  border: 2.5px solid #a1a1aa !important; /* Optional: sets border color to default (gray) */
+}
+/*
+form input.form-control:focus {
+  border: 2.5px solid #a1a1aa; 
+  outline: none; 
+  color: #000000;
+}*/

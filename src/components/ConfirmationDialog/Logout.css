@@ -1,0 +1,26 @@
+/* logout.css */
+ 
+ 
+/* Confirm Button Style */
+.confirm-button {
+    background-color: #fb2a2a;
+    color: white;
+    border: none;
+  }
+   
+  .confirm-button:hover {
+    background-color: #d60000;
+  }
+   
+  /* Cancel Button Style */
+  .cancel-button {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+  }
+   
+  .cancel-button:hover {
+    background-color: #00438a;
+  }
+   
+  

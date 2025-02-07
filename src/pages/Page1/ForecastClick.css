@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+  font-family: 'Inter', sans-serif;
+  background-color: #F4F4F5;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 2rem;
+  color: #F97316;
+}
+
+h4 {
+  margin-top: 1.5rem;
+  font-weight: 550;
+  font-size: 1rem;
+  color: #333;
+}
+
+.table-container-forecastClick {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  height: auto; /* Adjust height as needed */
+  overflow: hidden; /* Ensure rounded corners are visible */
+  border: 1px solid #d2d6da; /* Light grey border */
+  border-radius: .5rem;
+  background-color: #ffffff; /* Light grey background for better readability */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for better UI */
+  table-layout: auto; /* Allow table layout to adapt based on content */
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: .5rem; /* Apply border radius to the table */
+  overflow: hidden; /* Ensure rounded corners are visible */
+  
+}
+
+.table th,
+.table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+  font-size: .85rem;
+}
+
+.table th {
+  padding-top: 12px;
+  background-color: #ffffff;
+  color: rgb(39, 39, 42);
+}
+
+.table td {
+  background-color: #ffffff;
+  color: rgb(71, 71, 76);
+}
+
+.table th,
+.table td {
+  border: 1px solid #d2d6da;
+}
+
+.table td:hover {
+  background-color: #f0f0f0; /* Light grey background on hover for better UX */
+}
+
+

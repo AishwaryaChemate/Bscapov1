@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+.planning-view-sap {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  background-color: #F4F4F5; /* Keeping the same background color */
+}
+
+.btn-planningViewSap {
+  background-color: #F97316; 
+  color: #FFFFFF; 
+  font-size: 0.85rem;
+  font-weight: 550;
+  border: 1px solid #F97316; 
+  padding: 8px 16px; 
+  border-radius: .5rem; 
+  cursor: pointer; /* Pointer cursor for interactivity */
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions for hover effects */
+}
+
+.btn-planningViewSap:hover {
+  background-color: #F97316;
+  border: none;
+  transition: none;
+}
+
+.btn-planningViewSap:active {
+  background-color: #F97316; /* Even darker shade on active click */
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3); /* Inset shadow for pressed effect */
+}
+#planner-run{
+  margin-left: 1rem;
+}
+
+.form-control {
+  border: 1px solid #d2d6da;
+  border-radius: .5rem;
+}
+
+.form-control:focus {
+  border: 2.5px solid #a1a1aa;
+  outline: none;
+  box-shadow: none;
+}
+
+.input-sm {
+  font-size: 0.85rem;
+}
+
+.me-2 {
+  margin-right: 0.5rem;
+}
+
+.table-responsive-custom {
+  margin-top: 2rem;
+  overflow-x: auto;
+  overflow-y: auto;
+  max-height: 400px; /* Adjust height as needed */
+  background-color: #ffffff;
+  border: 1px solid #d2d6da;
+  border-radius: .5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.table-container-sap {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+}
+
+th {
+  padding: 12px 2px 6px 2px;
+  color: rgb(39, 39, 42); 
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+td{
+  padding: 6px 2px;
+  color: rgb(71, 71, 76);
+}
+
+th, td {
+  
+  border: 1px solid #d2d6da; /* Light grey border */
+  text-align: center;
+  min-width: 80px; /* Adjusted for 8-digit numbers */
+  max-width: 200px;
+  font-size: .85rem;
+  background-color: white; /* White background for cells */
+  font-family: 'Inter', sans-serif; /*23-01 Applying Roboto font to header by aishwarya */
+  word-wrap: break-word; /* Allow text to break if it's too long */
+  overflow: auto;
+}
+

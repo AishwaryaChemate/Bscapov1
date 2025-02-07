@@ -1,0 +1,5 @@
+.form-control:focus {
+  outline: none !important;       /* Removes the blue outline */
+  box-shadow: none !important;    /* Removes the blue glow */
+  border: 2.5px solid #a1a1aa !important; /* Optional: sets border color to default (gray) */
+}
